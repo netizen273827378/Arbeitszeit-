@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1E5AA8</color>
+    <color name="primary_dark">#16447F</color>
+    <color name="karte">#FFFFFF</color>
+    <color name="hintergrund">#EEF2F7</color>
+    <color name="text_gedimmt">#5F6B7A</color>
+    <color name="plus">#2E7D32</color>
+    <color name="minus">#C62828</color>
+    <color name="warnung_hintergrund">#FFF4E0</color>
+</resources>

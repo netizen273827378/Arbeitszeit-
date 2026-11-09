@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Einstempeln -->
+        <LinearLayout style="@style/Karte">
+
+            <TextView
+                style="@style/Ueberschrift"
+                android:text="EINGESTEMPELT UM" />
+
+            <TextView
+                android:id="@+id/textEinstempeln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="--:--"
+                android:textColor="@color/primary"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonEinstempelnWaehlen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Uhrzeit wählen" />
+
+                <Button
+                    android:id="@+id/buttonEinstempelnJetzt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Jetzt" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Ergebnis -->
+        <LinearLayout
+            android:id="@+id/karteErgebnis"
+            style="@style/Karte"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/Ueberschrift"
+                android:text="FRÜHESTENS AUSSTEMPELN (OHNE MINUSSTUNDEN)" />
+
+            <TextView
+                android:id="@+id/textFruehestens"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:text="--:--"
+                android:textColor="@color/plus"
+                android:textSize="56sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textRestzeit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/text_gedimmt"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textDetails"
+                style="@style/Zeile"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="4dp" />
+
+            <TextView
+                android:id="@+id/textHinweise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/warnung"
+                android:lineSpacingExtra="4dp"
+                android:padding="12dp"
+                android:textColor="#6B4500"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Ausstempeln / Saldo -->
+        <LinearLayout
+            android:id="@+id/karteSaldo"
+            style="@style/Karte"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/Ueberschrift"
+                android:text="SALDO BERECHNEN" />
+
+            <TextView
+                style="@style/Zeile"
+                android:text="Wenn ich um … ausstempele:"
+                android:textColor="@color/text_gedimmt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textAusstempeln"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:text="--:--"
+                    android:textColor="@color/primary"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonAusstempelnWaehlen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uhrzeit wählen" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textSaldo"
+                style="@style/Zeile"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Regeln -->
+        <LinearLayout style="@style/Karte">
+
+            <TextView
+                style="@style/Ueberschrift"
+                android:text="DEINE REGELN" />
+
+            <TextView
+                style="@style/Zeile"
+                android:lineSpacingExtra="4dp"
+                android:text="• Soll: 7,8 Std. (7:48) pro Tag, 39 Std. pro Woche\n• Kernarbeitszeit: 9:00 – 15:00\n• Gleitzeit: 6:00 – 20:00\n• Gutschrift Einstempeln: +15 Min.\n• Mittagspause: pauschal −30 Min."
+                android:textColor="@color/text_gedimmt"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
