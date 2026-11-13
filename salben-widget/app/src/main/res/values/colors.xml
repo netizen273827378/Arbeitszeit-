@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Farben im HELLEN Modus. Die Farben für den dunklen Modus stehen in values-night/colors.xml -->
+<resources>
+    <color name="widget_hintergrund">#FFFFFFFF</color>
+    <color name="widget_text">#FF1C1B1F</color>
+    <color name="widget_text_gedimmt">#FF5F6368</color>
+    <color name="widget_text_erledigt">#FF9AA0A6</color>
+    <color name="widget_rot">#FFC62828</color>
+    <color name="widget_akzent">#FF2E7D32</color>
+    <color name="icon_hintergrund">#FF3F7D8C</color>
+</resources>

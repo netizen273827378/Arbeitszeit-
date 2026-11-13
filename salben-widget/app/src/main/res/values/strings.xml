@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Salben-Erinnerung</string>
+    <string name="widget_name">Salben-Plan</string>
+    <string name="widget_beschreibung">Zeigt die nächste Salbe und alle Termine des Tages zum Abhaken.</string>
+</resources>

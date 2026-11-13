@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Farben im DUNKLEN Modus -->
+<resources>
+    <color name="widget_hintergrund">#FF202124</color>
+    <color name="widget_text">#FFECEDEF</color>
+    <color name="widget_text_gedimmt">#FFB4B8BD</color>
+    <color name="widget_text_erledigt">#FF6E7378</color>
+    <color name="widget_rot">#FFFF7B72</color>
+    <color name="widget_akzent">#FF81C995</color>
+    <color name="icon_hintergrund">#FF3F7D8C</color>
+</resources>

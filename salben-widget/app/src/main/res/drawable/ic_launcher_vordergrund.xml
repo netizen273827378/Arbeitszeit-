@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- App-Symbol: weißer Tropfen mit Haken -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,28C54,28 37,48 37,61a17,17 0,0 0,34 0C71,48 54,28 54,28z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF3F7D8C"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M46,62L52,68L63,56" />
+</vector>
